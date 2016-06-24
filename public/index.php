@@ -47,10 +47,6 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
-SassCompiler::run("resources/assets/sass/", "public/css/");
-// some people said this does not work in their installation, so if you have trouble, try these paths:
-// SassCompiler::run("public/scss/", "public/css/");
-
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(
