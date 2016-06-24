@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/master');
+Route::get('/', function()
+{
+    return View::make('pages.home');
+});
+Route::get('research', function()
+{
+    return View::make('pages.research');
+});
+Route::get('ideation', function()
+{
+    return View::make('pages.ideation');
+});
+Route::get('product', function()
+{
+    return View::make('pages.product');
 });
