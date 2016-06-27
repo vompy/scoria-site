@@ -7,8 +7,7 @@
     </div>
     <div class="hunt">
 	    <div class="hunt-content">
-	    	<h2 class="hunt-statement">Our team is prototyping a system to aid astronautsstudying geology on Mars. We took a human-centered approach to locate breakdowns within this problem space by combining secondary and primary research methods with experiential exercises and participatory
-design.</h2>
+	    	<h2 class="hunt-statement">Our team is prototyping a system to aid astronauts studying geology on Mars. We took a human-centered approach to locate breakdowns within this problem space by combining secondary and primary research methods with experiential exercises and participatory design.</h2>
 	    </div>    	
     </div>
 	<div class="cards">
@@ -50,79 +49,73 @@ design.</h2>
 	</div>
 	<section id="cd-timeline" class="cd-timeline cd-container">
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
+			<div class="cd-timeline-img cd-picture icon-homepage-1">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>Project Scoping</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
+				<p>We met with our client to define the goals for our project. Afterwards, we decided on the scope of the project and created a project timeline.</p>
+				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+				<span class="cd-date">January</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
+			<div class="cd-timeline-img cd-picture icon-homepage-2">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>Literature Review</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 18</span>
+				<p>Team members read scientific papers of past NASA research on the following areas: the history of Apollo surface missions, Earth-based analog missions, planetary geology, and various designs and prototypes of procedural aids (including cuff checklists, cue cards, and digital devices). We used this secondary research to answer our initial questions about the domain. </p>
+				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+				<span class="cd-date">February</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
+			<div class="cd-timeline-img cd-picture icon-homepage-3">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>Core Research</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 24</span>
+				<p>We took a two-step approach: field and domain research. We observed our clients running a practice traverse. Then, in order to build empathy for our users, we conducted our own traverse. We wanted to physicaly and emotional experience of an analog mission. </p>
+				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+				<span class="cd-date">February-April</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/cd-icon-location.svg" alt="Location">
+			<div class="cd-timeline-img cd-picture icon-homepage-4">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>Research Synthesis</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 14</span>
+				<p>We utilized two main synthesis methodologies: modeling and affinity diagramming. Modeling the users’ emotional and logistical journeys during a traverse enabled us to visualize pain points and breakdowns. eanwhile, the affinity process empowered us to synthesize data across all of our research by having us deconstruct the data into single units of information and reconstruct the units into meaningful groups.</p>
+				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+				<span class="cd-date">April</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/cd-icon-location.svg" alt="Location">
+			<div class="cd-timeline-img cd-picture icon-homepage-5">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>Iterative Prototyping</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 18</span>
+				<p>We created many low-fidelity designs and tested them with users and our client. Then we narrowed down to a few ideas and tested them again. After we decided on one idea, we continued to refine our solution by prototying and testing rapidly.</p>
+				<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+				<span class="cd-date">May-July</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
+			<div class="cd-timeline-img cd-picture icon-homepage-6">
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Deliver & Present</h2>
-				<p>This is the content of the last section</p>
-				<span class="cd-date">Feb 26</span>
+				<h2>Ship</h2>
+				<p>At the end of our project we deliver our solution to our clients.</p>
+				<span class="cd-date">August</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->

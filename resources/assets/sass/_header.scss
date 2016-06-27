@@ -1,0 +1,125 @@
+$header-height: 50px;
+
+.logo {
+	color: color(white);
+	font-size: modular-scale(2);
+	font-family: $heading-font-family;
+	font-weight: weight(bold);
+	text-transform: uppercase;
+
+	&:hover {
+		color: link(hover);
+	}
+}
+
+.cd-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $header-height;
+	background: color(header);
+	z-index: z(header);
+}
+.cd-header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.cd-header #cd-logo {
+	float: left;
+	margin: 13px 0 0 5%;
+}
+.cd-header #cd-logo img {
+	display: block;
+}
+@media only screen and (min-width: 768px) {
+	.cd-header {
+		height: 70px;
+	}
+	.cd-header #cd-logo {
+		margin: 16px 0 0 5%;
+	}
+}
+
+.cd-main-nav {
+	float: right;
+	margin-right: 5%;
+	width: 44px;
+	height: 100%;
+	background: url("../images/cd-icon-menu.svg") no-repeat center center;
+	background-size: 44px 44px;
+	cursor: pointer;
+}
+.cd-main-nav ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.cd-main-nav ul.is-visible {
+	-webkit-transform: translateY(50px);
+	-moz-transform: translateY(50px);
+	-ms-transform: translateY(50px);
+	-o-transform: translateY(50px);
+	transform: translateY(50px);
+}
+.cd-main-nav a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 5%;
+	background: #2f292a;
+	border-top: 1px solid #453c3d;
+	color: color(white);
+}
+@media only screen and (min-width: 768px) {
+	.cd-main-nav {
+		width: auto;
+		height: auto;
+		background: none;
+		cursor: auto;
+	}
+	.cd-main-nav ul {
+		position: static;
+		width: auto;
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+		line-height: 70px;
+	}
+	.cd-main-nav ul.is-visible {
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+	.cd-main-nav li {
+		display: inline-block;
+		margin-left: 1em;
+	}
+	.cd-main-nav a {
+		display: inline-block;
+		height: auto;
+		line-height: normal;
+		background: transparent;
+		padding: .6em 1em;
+		border-top: none;
+		color: color(white);
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+	.no-touch .cd-main-nav a:hover {
+		color: link(hover);
+	}
+}

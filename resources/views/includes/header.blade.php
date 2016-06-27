@@ -1,10 +1,12 @@
-<div class="navbar">
-    <div class="navbar-inner">
-        <a class="logo" href="/"><h3>Scoria</h3></a>
-        <ul class="nav">
-            <li><a href="/product">Product</a></li>
-            <li><a href="/ideation">Ideation</a></li>
-            <li><a href="/research">Research</a></li>
-        </ul>
-    </div>
-</div>
+<header class="cd-header">
+	<div id="cd-logo"><a class="logo" href="/">Scoria</a></div>
+
+	<nav class="cd-main-nav">
+		<ul>
+			<!-- inser more links here -->
+			<li><a href="/research">Research</a></li>
+			<li><a href="/ideation">Ideation</a></li>
+			<li><a href="/product">Product</a></li>
+		</ul>
+	</nav> <!-- cd-main-nav -->
+</header>

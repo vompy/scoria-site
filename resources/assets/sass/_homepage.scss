@@ -1,0 +1,386 @@
+body {
+	background: color(bg);
+	margin: 0;
+}
+
+.hero {
+	position: relative;
+	margin-top: $header-height;
+}
+
+.hero-content {
+	z-index: z(hero);
+	-webkit-filter: brightness(.5);
+	filter: brightness(.5);
+	position: relative;
+	background: url('../images/homepage/team.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: top;
+	display: table;
+	width: 100%;
+	height: 38vw;
+}
+
+.hero-tagline {
+	position: absolute;
+	color: color(white);
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: z(hero-tagline);
+	color: color(white);
+	text-transform: uppercase;
+	font-weight: weight(light);
+	font-size: modular-scale(4);
+	text-align: center;
+}
+
+.hunt-content {
+	text-align: center;
+	background: color(sub-bg);
+}
+
+.hunt-statement {
+	@include pad(default);
+	text-align: center;
+	font-weight: weight(light);
+	font-size: modular-scale(2.5);
+
+}
+
+.cards {
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include justify-content(space-between);
+	@include pad(default);
+
+	h4 {
+		margin-top: .5em;
+	}
+
+	.card {
+		@include flex-basis(20em);
+		@include flex-grow(1);
+		margin: 0 1em;
+	}
+
+	.card-image {
+		height: 15em;
+		background: whitesmoke;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			-webkit-filter: brightness(.5);
+			filter: brightness(.5);
+		}
+	}
+}
+
+$color-1: #303e49; // blue dark
+$color-2: #c03b44; // red
+$color-3: #ffffff; // white
+$color-4: #75ce66; // green
+$color-5: #f0ca45; // yellow
+
+#cd-timeline {
+	position: relative;
+	@include pad(default);
+	margin: {
+		top: 2em;
+		bottom: 2em;
+	}
+
+	&::before {
+		/* this is the vertical line */
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 18px;
+		height: 100%;
+		width: 4px;
+		background: darken(color(bg), 5%);
+	}
+
+	@include MQ(L) {
+		margin: {
+			top: 3em;
+			bottom: 3em;
+		}
+
+		&::before {
+			left: 50%;
+			margin-left: -2px;
+		}
+	}
+}
+
+.cd-timeline-block {
+	position: relative;
+	margin: 2em 0;
+	@include clearfix;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@include MQ(L) {
+		margin: 4em 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.cd-timeline-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px color(white), inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+
+	img {
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: relative;
+		left: 50%;
+		top: 50%;
+		margin-left: -12px;
+		margin-top: -12px;
+	}
+
+	&.cd-picture {
+		background: link(base);
+	}
+
+
+	$timeline-icons: target, book, search, stats-dots, cog, rocket;
+	@each $icon in $timeline-icons {
+	    $i: index($timeline-icons, $icon);
+	    &.icon-homepage-#{$i} { 
+	        @extend .icon-#{$icon};
+            &:before {
+            	color: color(white);
+			    margin: 14px;
+			    display: block;
+			    font-size: 2em;
+            }
+	    }
+	}
+	@include MQ(L) {
+		width: 60px;
+		height: 60px;
+		left: 50%;
+		margin-left: -30px;
+
+		/* Force Hardware Acceleration in WebKit */
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+
+		.cssanimations &.is-hidden {
+			visibility: hidden;
+		}
+
+		.cssanimations &.bounce-in {
+			visibility: visible;
+			@include animation(cd-bounce-1 .6s);
+		}
+	}
+}
+
+@include keyframes(cd-bounce-1) {
+	0% {
+		opacity: 0;
+		@include transform(scale(.5));
+	}
+
+	60% {
+		opacity: 1;
+		@include transform(scale(1.2));
+	}
+
+	100% {
+		@include transform(scale(1));
+	}
+}
+
+.cd-timeline-content {
+	position: relative;
+	margin-left: 60px;
+	background: $color-3;
+	@include border-radius;
+	padding: 1em;
+	box-shadow: 0 3px 0 darken(color(bg), 5%);
+	@include clearfix;
+
+	h2 {
+		color: color(dark-gray);
+	}
+
+	p, .cd-read-more, .cd-date {
+		font-size: modular-scale(.7);
+	}
+
+	.cd-read-more, .cd-date {
+		display: inline-block;
+	}
+
+	p {
+		margin: 1em 0;
+		line-height: 1.6;
+	}
+
+	a.cd-read-more {
+		float: right;
+		padding: .8em 1em;
+		background-color: link(base);
+		color: color(white);
+		@include border-radius;
+
+		.no-touch &:hover {
+			background-color: link(hover);
+		}
+	}
+
+	.cd-date {
+		float: left;
+		padding: .8em 0;
+		opacity: .7;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 16px;
+		right: 100%;
+		height: 0;
+		width: 0;
+		border: 7px solid transparent;
+		border-right: 7px solid color(white);
+	}
+
+	@include MQ(M) {
+		h2 {
+			font-size: modular-scale(1.2);
+		}
+
+		p {
+			font-size: modular-scale(1);
+		}
+
+		.cd-read-more, .cd-date {
+			font-size: modular-scale(1);
+		}
+	}
+
+	@include MQ(L) {
+		margin-left: 0;
+		padding: 1.6em;
+		width: 45%;
+
+		&::before {
+			top: 24px;
+			left: 100%;
+			border-color: transparent;
+			border-left-color: color(white);
+		}
+
+		.cd-read-more {
+			float: left;
+		}
+
+		.cd-date {
+			position: absolute;
+			width: 100%;
+			left: 122%;
+			top: 6px;
+			font-size: modular-scale(1);
+		}
+
+		.cd-timeline-block:nth-child(even) & {
+			float: right;
+
+			&::before {
+				top: 24px;
+				left: auto;
+				right: 100%;
+				border-color: transparent;
+				border-right-color: color(white);
+			}
+
+			.cd-read-more {
+				float: right;
+			}
+
+			.cd-date {
+				left: auto;
+				right: 122%;
+				text-align: right;
+			}
+		}
+
+		.cssanimations &.is-hidden {
+			visibility: hidden;
+		}
+
+		.cssanimations &.bounce-in {
+			visibility: visible;
+			@include animation(cd-bounce-2 .6s);
+		}
+	}
+}
+
+@include MQ(L) {
+	/* inverse bounce effect on even content blocks */
+	.cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+		@include animation(cd-bounce-2-inverse .6s);
+	}
+}
+
+@include keyframes(cd-bounce-2) {
+	0% {
+		opacity: 0;
+		@include transform(translateX(-100px));
+	}
+
+	60% {
+		opacity: 1;
+		@include transform(translateX(20px));
+	}
+
+	100% {
+		@include transform(translateX(0));
+	}
+}
+
+@include keyframes(cd-bounce-2-inverse) {
+	0% {
+		opacity: 0;
+		@include transform(translateX(100px));
+	}
+
+	60% {
+		opacity: 1;
+		@include transform(translateX(-20px));
+	}
+
+	100% {
+		@include transform(translateX(0));
+	}
+}
+
