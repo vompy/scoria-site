@@ -23,7 +23,7 @@ Route::get('/ideation', function()
 {
     return View::make('pages.ideation');
 });
-Route::get('/product', function()
+Route::get('/fieldbook', function()
 {
-    return View::make('pages.product');
+    return View::make('pages.fieldbook');
 });

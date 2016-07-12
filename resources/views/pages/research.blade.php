@@ -73,5 +73,11 @@
 			</article>
 		</div> <!-- research-container -->
 	</div> <!-- cd-scrolling-bg -->
+	<div class="next-section">
+		<div class="inner">
+			<h4 class="next-section__title">Next Section: Ideation</h4>
+			<button class="btn btn-4 btn-4a icon-arrow-right2" href="/ideation" ><span>Continue</span></button>			
+		</div>
+	</div
 </main> <!-- cd-main-content -->
 @stop

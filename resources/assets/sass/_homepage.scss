@@ -44,11 +44,15 @@ body {
 }
 
 .hunt-statement {
+	font-size: modular-scale(1);
 	@include pad(default);
 	text-align: center;
 	font-weight: weight(light);
-	font-size: modular-scale(2.5);
+	
 
+	@include MQ(M) {
+		font-size: modular-scale(2.5);
+	}
 }
 
 .cards {
@@ -59,12 +63,22 @@ body {
 
 	h4 {
 		margin-top: .5em;
+		font-weight: weight(medium);
+		font-size: modular-scale(1.2);
 	}
 
 	.card {
 		@include flex-basis(20em);
 		@include flex-grow(1);
 		margin: 0 1em;
+		background-color: white;
+		@include pad(20px);
+	}
+
+	.card-copy {
+		font-weight: weight(medium);
+		font-size: modular-scale(1);
+		color: color(dark-gray);
 	}
 
 	.card-image {
@@ -176,9 +190,14 @@ $color-5: #f0ca45; // yellow
 	        @extend .icon-#{$icon};
             &:before {
             	color: color(white);
-			    margin: 14px;
+			    margin: 9px;
 			    display: block;
-			    font-size: 2em;
+			    font-size: 1.4em;
+
+			    @include MQ(L) {
+			    	margin: 14px;
+				    font-size: 2em;
+			    }
             }
 	    }
 	}
@@ -233,7 +252,11 @@ $color-5: #f0ca45; // yellow
 	}
 
 	p, .cd-read-more, .cd-date {
-		font-size: modular-scale(.7);
+		// font-size: modular-scale(.1);
+
+		@include MQ(M) {
+			// font-size: modular-scale(.7);
+		}
 	}
 
 	.cd-read-more, .cd-date {

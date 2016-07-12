@@ -6,3 +6,94 @@ a {
 		color: link(hover);
 	}
 }
+
+.next-section {
+	background: color(sub-bg);
+	
+
+	.inner {
+		@include pad(default);
+		text-align: center;
+		margin: auto;
+	}
+
+	.next-section__title {
+		color: color(white);
+		font-weight: weight(regular);
+		font-size: modular-scale(3);
+	}
+}
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	span {
+		font-family: $heading-font-family;
+	}
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Button 4 */
+.btn-4 {
+	border-radius: 50px;
+	border: 3px solid #fff;
+	color: #fff;
+	overflow: hidden;
+}
+
+.btn-4:active {
+	border-color: color(white);
+	color: link(hover);
+}
+
+.btn-4:hover {
+	background: link(hover);
+}
+
+.btn-4:before {
+	position: absolute;
+	height: 100%;
+	font-size: 125%;
+	line-height: 3.5;
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-4:active:before {
+	color: link(hover);
+}
+
+/* Button 4a */
+.btn-4a:before {
+	left: 130%;
+	top: 0;
+}
+
+.btn-4a:hover:before {
+	left: 80%;
+}

@@ -29,11 +29,15 @@ $header-height: 50px;
 .cd-header #cd-logo {
 	float: left;
 	margin: 13px 0 0 5%;
+
+	@include MQ(S) { 
+		margin: 5px 0 0 5%;		
+	}
 }
 .cd-header #cd-logo img {
 	display: block;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $M) {
 	.cd-header {
 		height: 70px;
 	}
@@ -42,16 +46,16 @@ $header-height: 50px;
 	}
 }
 
-.cd-main-nav {
+.menu {
 	float: right;
 	margin-right: 5%;
-	width: 44px;
+	width: 20px;
 	height: 100%;
 	background: url("../images/cd-icon-menu.svg") no-repeat center center;
-	background-size: 44px 44px;
+	background-size: 20px;
 	cursor: pointer;
 }
-.cd-main-nav ul {
+.menu ul {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,14 +66,14 @@ $header-height: 50px;
 	-o-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
-.cd-main-nav ul.is-visible {
+.menu ul.is-visible {
 	-webkit-transform: translateY(50px);
 	-moz-transform: translateY(50px);
 	-ms-transform: translateY(50px);
 	-o-transform: translateY(50px);
 	transform: translateY(50px);
 }
-.cd-main-nav a {
+.menu a {
 	display: block;
 	height: 50px;
 	line-height: 50px;
@@ -78,14 +82,14 @@ $header-height: 50px;
 	border-top: 1px solid #453c3d;
 	color: color(white);
 }
-@media only screen and (min-width: 768px) {
-	.cd-main-nav {
+@media only screen and (min-width: $M) {
+	.menu {
 		width: auto;
 		height: auto;
 		background: none;
 		cursor: auto;
 	}
-	.cd-main-nav ul {
+	.menu ul {
 		position: static;
 		width: auto;
 		-webkit-transform: translateY(0);
@@ -93,20 +97,20 @@ $header-height: 50px;
 		-ms-transform: translateY(0);
 		-o-transform: translateY(0);
 		transform: translateY(0);
-		line-height: 70px;
+		line-height: 34px;
 	}
-	.cd-main-nav ul.is-visible {
+	.menu ul.is-visible {
 		-webkit-transform: translateY(0);
 		-moz-transform: translateY(0);
 		-ms-transform: translateY(0);
 		-o-transform: translateY(0);
 		transform: translateY(0);
 	}
-	.cd-main-nav li {
+	.menu li {
 		display: inline-block;
 		margin-left: 1em;
 	}
-	.cd-main-nav a {
+	.menu a {
 		display: inline-block;
 		height: auto;
 		line-height: normal;
@@ -119,7 +123,151 @@ $header-height: 50px;
 		font-size: 14px;
 		font-size: 0.875rem;
 	}
-	.no-touch .cd-main-nav a:hover {
+	.no-touch .menu a:hover {
 		color: link(hover);
 	}
 }
+
+
+/* Horatio Styles */
+
+.menu {
+	margin-top: 16px;
+
+	.menu__item {
+		margin-left: 3px;
+		margin-right: 3px;
+		color: color(white);
+		position: relative;
+		-webkit-transition: color .25s;
+		transition: color .25s;
+
+		a {
+			position: relative;
+			color: inherit;
+		}
+	}
+
+
+
+	.menu__item--current {
+		color: link(hover)
+	}
+
+	.menu__item:hover {
+		color: link(base)
+	}
+
+	.menu__item::before,
+	.menu__item::after,
+	.menu__item a::before,
+	.menu__item a::after {
+		position: absolute;
+		display: block;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border: 2px solid currentColor;
+	}
+
+	.menu__item::before {
+		border-width: 0 0 0 2px;
+		-webkit-transform-origin: left bottom;
+		transform-origin: left bottom;
+	}
+
+	.menu__item::after {
+		border-width: 0 2px 0 0;
+		-webkit-transform-origin: right top;
+		transform-origin: right top;
+	}
+
+	.menu__item a::before,
+	.menu__item a::after {
+		z-index: 2;
+	}
+
+	.menu__item a::before {
+		border-width: 2px 0 0;
+		-webkit-transform-origin: left top;
+		transform-origin: left top;
+	}
+
+	.menu__item a::after {
+		border-width: 0 0 2px;
+		-webkit-transform-origin: right bottom;
+		transform-origin: right bottom;
+	}
+
+	.menu__item--current::before,
+	.menu__item--current::after,
+	.menu__item:hover::before,
+	.menu__item:hover::after,
+	.menu__item--current a::before,
+	.menu__item--current a::after,
+	.menu__item:hover a::before,
+	.menu__item:hover a::after {
+		content: '';
+	}
+
+	.menu__item:not(.menu__item--current):hover::before,
+	.menu__item:not(.menu__item--current):hover::after,
+	.menu__item:not(.menu__item--current):hover a::before,
+	.menu__item:not(.menu__item--current):hover a::after {
+		-webkit-animation: horatio-anim .6s ease-in-out;
+		animation: horatio-anim .6s ease-in-out;
+	}
+
+	.menu__item:not(.menu__item--current):hover::before {
+		-webkit-animation-delay: -.45s;
+		animation-delay: -.45s;
+	}
+
+	.menu__item:not(.menu__item--current):hover a::before {
+		-webkit-animation-delay: -.3s;
+		animation-delay: -.3s;
+	}
+
+	.menu__item:not(.menu__item--current):hover::after {
+		-webkit-animation-delay: -.15s;
+		animation-delay: -.15s;
+	}
+
+	.menu__item:not(.menu__item--current):hover a::after {
+		-webkit-animation-delay: 0;
+		animation-delay: 0;
+	}
+	
+}
+
+
+@-webkit-keyframes horatio-anim {
+	0%, 33% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(1.5);
+		transform: rotate(45deg) scale(1.5);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes horatio-anim {
+	0%, 33% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(1.5);
+		transform: rotate(45deg) scale(1.5);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* End: Horatio Styles */
