@@ -74,7 +74,7 @@
 	<div class="next-section">
 		<div class="inner">
 			<h4 class="next-section__title">Next Section: Fieldbook</h4>
-			<button class="btn btn-4 btn-4a icon-arrow-right2" href="/fieldbook" ><span>Continue</span></button>			
+			<a class="next-section__link" href="/fieldbook"><button class="btn btn-4 btn-4a">Continue</button></a>		
 		</div>
 	</div
 </main> <!-- cd-main-content -->

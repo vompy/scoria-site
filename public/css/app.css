@@ -660,8 +660,9 @@ a {
   outline: none;
   position: relative;
   transition: all 0.3s; }
-  .btn span {
-    font-family: "brandon-grotesque", sans-serif; }
+
+.next-section__link {
+  font-family: "brandon-grotesque", sans-serif; }
 
 .btn:after {
   content: '';
@@ -689,7 +690,9 @@ a {
   font-size: 125%;
   line-height: 3.5;
   color: #fff;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  font-family: 'icomoon' !important;
+  content: "\ea3c"; }
 
 .btn-4:active:before {
   color: #45ba51; }

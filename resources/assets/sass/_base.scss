@@ -41,10 +41,10 @@ a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+}
 
-	span {
-		font-family: $heading-font-family;
-	}
+.next-section__link {
+	font-family: $heading-font-family;
 }
 
 .btn:after {
@@ -82,6 +82,8 @@ a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	font-family: 'icomoon' !important;
+	content: "\ea3c";
 }
 
 .btn-4:active:before {
