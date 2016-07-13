@@ -1,15 +1,15 @@
 @extends('layouts.master')
 @section('content')
 <div class="hero">
-	<div class="hero-content">
-		<!--   <h2 class="hero-tagline">We're a human centered design team</h2>   -->           
-	</div>
+	<div class="hero-content">       
 </div>
-<div class="hunt">
-	<div class="hunt-content">
-		<h2 class="hunt-statement">Our team is prototyping a system to aid astronauts studying geology on Mars. We took a human-centered approach to locate breakdowns within this problem space by combining secondary and primary research methods with experiential exercises and participatory design.</h2>
-	</div>    	
 </div>
+<section class="cd-section cd-placeholder-2">
+	<div class="cd-container">
+		<h2>Our Mission</h2>
+		<p>Our team is prototyping a system to aid astronauts studying geology on Mars. We took a human-centered approach to locate breakdowns within this problem space by combining secondary and primary research methods with experiential exercises and participatory design.</p>
+	</div> <!-- cd-container -->
+</section>
 <div class="cards">
 	<div class="card">
 		<a href="/research">
@@ -42,7 +42,7 @@
 	<div class="card">
 		<a href="/fieldbook">
 			<div class="card-image">
-				<img src="/images/homepage/creation.jpg">
+				<img src="/images/homepage/fieldbook.jpg">
 			</div>
 			<div class="card-header">
 				<h4>Fieldbook</h4>
@@ -125,5 +125,11 @@
 		</div> <!-- cd-timeline-content -->
 	</div> <!-- cd-timeline-block -->
 </section> <!-- cd-timeline -->
+<section class="cd-section goto-research">
+	<div class="cd-container">
+		<h2>Dive into our Process</h2>
+		<a class="next-section__link" href="/research"><button class="btn btn-4 btn-4a">Research</button></a>
+	</div> <!-- cd-container -->
+</section>
 
 @stop

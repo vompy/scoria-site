@@ -70,7 +70,7 @@ body {
 	.card {
 		@include flex-basis(20em);
 		@include flex-grow(1);
-		margin: 0 1em;
+		margin: 1em;
 		background-color: white;
 		@include pad(20px);
 	}
@@ -88,7 +88,7 @@ body {
 
 		img {
 			width: 100%;
-			-webkit-filter: brightness(.5);
+			-webkit-filter: brightness(.8);
 			filter: brightness(.5);
 		}
 	}
@@ -405,5 +405,10 @@ $color-5: #f0ca45; // yellow
 	100% {
 		@include transform(translateX(0));
 	}
+}
+
+.goto-research {
+	background: #899fcb;
+	color: color(white);
 }
 

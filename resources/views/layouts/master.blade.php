@@ -18,7 +18,7 @@
 
     </div>
 
-    <footer class="footer-2" role="contentinfo">
+    <footer class="footer-2 {{ Request::is('fieldbook*') ? 'footer__fieldbook' : '' }}" role="contentinfo">
         @include('includes.footer')
     </footer>
 

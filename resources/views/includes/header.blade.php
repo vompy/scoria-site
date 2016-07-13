@@ -7,6 +7,7 @@
 			<li class="menu__item {{ Request::is('research*') ? 'menu__item--current' : '' }}"><a class="menu__link" href="/research">Research</a></li>
 			<li class="menu__item {{ Request::is('ideation*') ? 'menu__item--current' : '' }}"><a class="menu__link" href="/ideation">Ideation</a></li>
 			<li class="menu__item {{ Request::is('fieldbook*') ? 'menu__item--current' : '' }}"><a class="menu__link" href="/fieldbook">Fieldbook</a></li>
+			<li class="menu__item {{ Request::is('team*') ? 'menu__item--current' : '' }}"><a class="menu__link" href="/team">Team</a></li>
 		</ul>
 	</nav> <!-- cd-main-nav -->
 </header>

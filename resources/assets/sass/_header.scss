@@ -1,4 +1,4 @@
-$header-height: 50px;
+$header-height: 70px;
 
 .logo {
 	color: color(white);
@@ -28,16 +28,16 @@ $header-height: 50px;
 }
 .cd-header #cd-logo {
 	float: left;
-	margin: 13px 0 0 5%;
+	margin: 5px 0 0 5%;
 
 	@include MQ(S) { 
-		margin: 5px 0 0 5%;		
+		margin: 13px 0 0 5%;		
 	}
 }
 .cd-header #cd-logo img {
 	display: block;
 }
-@media only screen and (min-width: $M) {
+@media only screen and (min-width: $S) {
 	.cd-header {
 		height: 70px;
 	}
@@ -78,16 +78,18 @@ $header-height: 50px;
 	height: 50px;
 	line-height: 50px;
 	padding-left: 5%;
-	background: #2f292a;
+	background: color(header);
 	border-top: 1px solid #453c3d;
 	color: color(white);
+	font-weight: weight(medium);
 }
-@media only screen and (min-width: $M) {
+@media only screen and (min-width: $S) {
 	.menu {
 		width: auto;
 		height: auto;
 		background: none;
 		cursor: auto;
+		margin-top: 16px;
 	}
 	.menu ul {
 		position: static;
@@ -132,9 +134,7 @@ $header-height: 50px;
 /* Horatio Styles */
 
 .menu {
-	margin-top: 16px;
-
-	.menu__item {
+		.menu__item {
 		margin-left: 3px;
 		margin-right: 3px;
 		color: color(white);
@@ -148,6 +148,9 @@ $header-height: 50px;
 		}
 	}
 
+	@include MQ(M) {
+		margin-top: 16px;
+	}
 
 
 	.menu__item--current {

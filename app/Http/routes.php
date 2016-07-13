@@ -27,3 +27,7 @@ Route::get('/fieldbook', function()
 {
     return View::make('pages.fieldbook');
 });
+Route::get('/team', function()
+{
+    return View::make('pages.team');
+});
