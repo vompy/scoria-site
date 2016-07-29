@@ -92,7 +92,7 @@ main.slide-out .cd-overlay {
 }
 .cd-section .cd-container {
   /* this modifies the .cd-container default max-width */
-  max-width: 768px;
+  max-width: 1200px;
 }
 .cd-section h2 {
   font-weight: bold;
@@ -121,8 +121,7 @@ main.slide-out .cd-overlay {
   }
   .cd-section p {
     line-height: 1.8;
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: modular-scale(2);
   }
 }
 
@@ -144,17 +143,12 @@ header p {
   color: #93861d;
 }
 
-.cd-placeholder-1 {
-  background: #f25f5c;
-  color: #fdeaea;
-}
-
 .cd-placeholder-2 {
   background: #FFF;
 }
 
 #cd-team {
-  background: #8abeb2;
+  background: link(base);
 }
 #cd-team .cd-container {
   max-width: 1200px;

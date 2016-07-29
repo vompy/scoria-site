@@ -85,26 +85,10 @@
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	z-index: 2;
 	font-weight: 400;
-}
-.cd-scrolling-bg.cd-color-1 {
-	background-color: #9cb3a8;
-	color: #243040;
+	background-color: color(white);
+	color: color(black);
 }
 
-.cd-scrolling-bg.cd-color-2 {
-	background-color: #99a478;
-	color: #3d3536;
-}
-
-.cd-scrolling-bg.cd-color-3 {
-	background-color: #b4d7a8;
-	color: #3d3536;
-}
-
-.cd-scrolling-bg.cd-color-4 {
-	background-color: #93c6ae;
-	color: darken(#93c6ae, 50%);
-}
 
 
 @media only screen and (min-width: 768px) {

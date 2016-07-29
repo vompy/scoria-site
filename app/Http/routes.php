@@ -15,6 +15,10 @@ Route::get('/', function()
 {
     return View::make('pages.home');
 });
+Route::get('/domain', function()
+{
+    return View::make('pages.domain');
+});
 Route::get('/research', function()
 {
     return View::make('pages.research');

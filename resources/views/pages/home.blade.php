@@ -7,7 +7,7 @@
 <section class="cd-section cd-placeholder-2">
 	<div class="cd-container">
 		<h2>Our Mission</h2>
-		<p>Our team is prototyping a system to aid astronauts studying geology on Mars. We took a human-centered approach to locate breakdowns within this problem space by combining secondary and primary research methods with experiential exercises and participatory design.</p>
+		<p>Our team is prototyping a system to aid astronauts studying geology on Mars. We took a human-centered approach to locate breakdowns within this problem space and implement a solution tailored to our users.</p>
 	</div> <!-- cd-container -->
 </section>
 <div class="cards">
@@ -128,7 +128,7 @@
 <section class="cd-section goto-research">
 	<div class="cd-container">
 		<h2>Dive into our Process</h2>
-		<a class="next-section__link" href="/research"><button class="btn btn-4 btn-4a">Research</button></a>
+		<a class="next-section__link" href="/domain"><button class="btn btn-4 btn-4a">Domain</button></a>
 	</div> <!-- cd-container -->
 </section>
 

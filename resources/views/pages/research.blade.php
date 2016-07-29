@@ -5,7 +5,7 @@
 	<h1>Research</h1>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-2">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Literature Review</p>
@@ -23,7 +23,7 @@
 		<h2>Analogous Domains</h2>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-3">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Analogous Domains</p>
@@ -40,7 +40,7 @@
 		<h2>Talking To the Users</h2>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-1">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Meeting the Users</p>
@@ -57,7 +57,7 @@
 		<h2>Empathy Building</h2>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-4">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Empathy Building</p>

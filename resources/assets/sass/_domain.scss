@@ -1,0 +1,58 @@
+.timeline {
+	@include outer-container;
+	
+	&_item {
+		@include row(table);
+		margin-bottom: flex-gutter();
+	}
+
+	&_image {
+		@include pad;
+		@include span-columns(3);
+		display: table-cell;
+		vertical-align: middle;
+	    
+	    img{
+	    	vertical-align: middle;
+	    	display: table-cell;
+	    }
+	}
+
+	&_info {
+		@include span-columns(8);
+	}
+
+	.year {
+		font-weight: weight(bold);
+	}
+}
+
+.challenges-images {
+	@include pad;
+}
+
+article.type-system-geometric {
+	h4 {
+		font-size: 1.2em;
+	    font-weight: weight(medium);
+	    margin-bottom: 0.2em;
+	    margin-top: 1em;
+	}
+}
+
+.cd-fixed-bg {
+	background-position: top;
+
+	&.cd-bg-9 {
+		background-image: url("../images/domain/mars-hero.jpg");
+	}
+	&.cd-bg-10 {
+		background-image: url("../images/domain/humanwithrobot.jpg");
+	}
+	&.cd-bg-11 {
+		background-image: url("../images/domain/humans-on-mars.jpg");
+	}
+	&.cd-bg-12 {
+		background-image: url("../images/domain/mars-terrain.jpg");
+	}
+}

@@ -5,7 +5,7 @@
 	<h1>Ideation</h1>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-2">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Visioning Session</p>
@@ -22,7 +22,7 @@
 		<h2>Analyzing Our Ideas</h2>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-3">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Analyzing Our Ideas</p>
@@ -38,7 +38,7 @@
 		<h2>Prototyping</h2>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-1">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Prototyping</p>
@@ -54,11 +54,11 @@
 		<h2>Scoping</h2>
 	</div> <!-- cd-fixed-bg -->
 
-	<div class="cd-scrolling-bg cd-color-4">
+	<div class="cd-scrolling-bg">
 		<div class="research-container">
 			<article class="type-system-geometric">
 				<p class="type">Scoping</p>
-				<h1>Choosing a Directions</h1>
+				<h1>Choosing a Direction</h1>
 				<h2>Scoping down our design to a specific user scenario</h2>
 
 				<p>After building low fidelity prototypes, we recognized that our ideas still spanned several dimensions of scope. Our next step was to make choices in the dimensions of user scenario, futurism, and technology.</p>

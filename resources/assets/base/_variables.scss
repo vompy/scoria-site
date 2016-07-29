@@ -22,17 +22,18 @@ $base-z-index: 0;
 // Colors
 $colors: (
 	white: #FFFFFF,
+	black: #242424,
 	blue: #1565c0,
 	dark-gray: #353639,
 	medium-gray: #757575,
 	light-gray: #ddd,
 	bg: #F1F4F6,
 	sub-bg: #A3ABB3,
-	header: #31353d
+	header: #242424
 );
 
 //Links
-$base-color: #7dcf85;
+$base-color: #84AFBC;
 
 $links: (
 	base: $base-color,
